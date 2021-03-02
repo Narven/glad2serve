@@ -1,0 +1,18 @@
+language: go
+
+go:
+  - 1.15.x
+  - 1.16.x
+
+addons:
+  apt:
+    packages:
+      - upx
+env:
+  - GO111MODULE=on
+
+before_install:
+  - go get -v golang.org/x/lint/golint
+
+script:
+  - ./pre-commit
