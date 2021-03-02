@@ -1,7 +1,6 @@
 language: go
 
 go:
-  - 1.15.x
   - 1.16.x
 
 addons:
@@ -14,5 +13,12 @@ env:
 before_install:
   - go get -v golang.org/x/lint/golint
 
+before_script:
+  - go vet ./...
+  - go test -v ./...
+
 script:
+  - go build
+
+after_script:
   - upx --brute jam
