@@ -22,3 +22,9 @@ script:
 
 after_script:
   - upx --brute jam
+
+deploy:
+  provider: releases
+  api_key: "$GITHUB_TOKEN"
+  file: jam
+  skip_cleanup: true
