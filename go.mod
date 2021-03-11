@@ -6,7 +6,6 @@ require (
 	github.com/gobuffalo/envy v1.9.0 // indirect
 	github.com/gobuffalo/packd v1.0.0 // indirect
 	github.com/gobuffalo/packr v1.30.1
-	github.com/gofiber/embed v0.1.2
 	github.com/gofiber/fiber/v2 v2.5.0
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/rogpeppe/go-internal v1.7.0 // indirect
